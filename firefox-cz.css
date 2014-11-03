@@ -1,0 +1,27 @@
+body					{color:#000;background:#FFF;text-align:center;
+						font-family:'Lucida Grande',Geneva,Verdana,Arial,Helvetica,sans-serif;
+						font-size:13px;voice-family:"\"}\"";voice-family:inherit;
+						font-size:82%}
+#ignored				{}
+
+a:link					{color:#36F}
+a:visited				{color:#939}
+a:hover					{color:#DD5300}
+a:active				{color:#E00}
+
+.page					{width:35em;margin:0 auto;text-align:left;background-color:#FFF;min-width:455px}
+
+dl						{margin:1.3em 0}
+dl dt					{font-weight:bold;font-size:1.4em}
+dl dt a					{color:#000 !important} 
+dl dd					{margin:.5em 0 1em 1em}
+dl dd span				{font-size:.8em;color:#999}
+
+h1						{margin:1em 0 .5em;text-align:center}
+h1 img					{display:inline;width:280px;height:78px;font-size:1.8em}
+hr						{display:block;height:1px;line-height:1px;font-size:1px;border:1px solid #999;border-width:1px 0 0 0;margin:.5em 0}
+
+.foot					{text-align:center;font-size:.9em;word-spacing:.5em;margin:.5em 0}
+.foot a					{word-spacing:0}
+.webstats				{text-align:center;margin-top:1em}
+.webstats div			{width:14px;margin:0 auto}
