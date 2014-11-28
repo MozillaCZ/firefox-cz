@@ -1,47 +1,104 @@
 <?php
-    header('Content-Type: text/html; charset=UTF-8');
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	function getPlatform() {
+		$uaString = isset($_SERVER["HTTP_USER_AGENT"]) ? $_SERVER["HTTP_USER_AGENT"] : "";
+		if(stristr($uaString, "Linux") || stristr($uaString, "X11") || stristr($uaString, "Lindows")) {
+			$arch =  8 * PHP_INT_SIZE;
+			if ($arch == 32) 
+				return "linux";
+			else 
+				return "linux64";
+		}
+
+		if(stristr($uaString, "Mac")) {
+			return "osx";
+		}
+
+		return "win";
+	}
+?>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Content-language" content="cs" />
-<title>Mozilla Firefox</title>
-<link rel="stylesheet" href="firefox-cz.css" type="text/css" media="screen" />
+<title>Mozilla Firefox - připraven pro vás, vaše soukromí a otevřený web</title>
 <link rel="shortcut icon" href="favicon.png" type="image/png" />
-<meta name="author" content="HTML code: Adam Hauner; e-mail: aha@pinknet.cz" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow" />
+
+<link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+<script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+
+
+<link rel="stylesheet" media="screen,projection,tv" href="http://mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
+<link rel="stylesheet" media="screen,projection,tv" href="http://mozorg.cdn.mozilla.net/media/css/styleguide-min.css" />
+<link rel="stylesheet" media="screen,projection,tv" href="firefox.css" />
 </head>
 <body id="www-firefox-cz">
-<div class="page">
-<h1><img src="firefox-ozw.png" alt="Mozilla Firefox &ndash; objevte znovu web" /></h1>
-<hr />
-<dl>
-	<dt><a href="http://www.mozilla.org/cs/firefox/">Mozilla Firefox</a></dt>
-	<dd>Oficiální stránky rychlého a&nbsp;bezpečného webového prohlížeče,
-	o&nbsp;kterém všichni nadšeně mluví.</dd>
 
-	<dt><a href="https://support.mozilla.com/cs/">Podpora uživatelů</a></dt>
-	<dd>Oficiální stránky podpory uživatelů Mozilla Firefoxu. Web obsahuje
-	řadu tipů a&nbsp;návodů, které vám mohou pomoci.</dd>
+<div id="page">
 
-	<dt><a href="http://forum.mozilla.cz/viewforum.php?f=3">Diskusní fórum</a></dt>
-	<dd>Webové fórum české komunity Mozilla Firefoxu pro podporu uživatelů. Máte-li
-	 problém, je to místo určené právě vám.</dd>
-
-	<dt><a href="https://addons.mozilla.org/cs/firefox/">Doplňky pro Firefox</a></dt>
-	<dd>Rozšiřte si	Firefox podle svých představ pomocí nepřeberného
-	množství doplňků. Vytvořte si svůj Firefox!</dd>
-
-	<dt><a href="http://www.mozilla.cz">Česká komunita uživatelů</a></dt>
-	<dd>Stránky české komunity Mozilla, kde můžete nalézt informace o&nbsp;aktuálním
-	dění, a&nbsp;kde se též můžete do projektu zapojit.</dd>
-</dl>
-<hr />
-<div class="foot">
-	<a href="http://www.mozilla.org/" title="Domovská stránka Mozilly" hreflang="en">Mozilla.org</a>
-	&middot;
-	Hostuje: <a href="http://www.flexibee.eu/">FlexiBee Systems s.r.o.</a>
+<div class="content">
+	<a href="http://www.mozilla.org/cs/" id="tabzilla" data-infobar="translation">Mozilla</a>
+	
+	<div id="header">         
+	
+		<div id="download-box">
+			<div id="download-button-desktop-beta" class="download-button download-button-beta download-button-small download-button-noicon">
+			<a class="download-link" id="download-link" href="http://www.mozilla.org/firefox/new/?scene=2#download-fx" 
+				data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=<?php echo getPlatform() ?>&amp;lang=cs">
+							<span class="download-content">
+									<strong class="download-title"></strong>
+                  <span class="download-subtitle">Stáhnout zdarma</span>
+									<span class="download-lang"></span>
+			            <span class="download-platform"></span>
+               </span>
+			</a>
+			</div>
+							<br /><small class="download-other download-other-desktop os_linux os_linux64 os_osx os_windows">
+			      <a href="http://www.mozilla.org/firefox/all/">Systémy a jazyky</a> |
+			      <a href="http://www.mozilla.org/firefox/notes/">Co je nového</a> |
+			      <a href="http://www.mozilla.org/privacy/firefox/">Soukromí</a>
+			    </small>
+		</div>		
+			
+	
+		<div id="logo">
+			<img src="firefox-logo.png" alt="Mozilla Firefox" />
+		</div>
+	</div>
+	
+	<div>
+	   <dl>
+			<dt><a href="http://www.mozilla.org/cs/firefox/">Mozilla Firefox</a></dt>
+			<dd>Oficiální stránky rychlého a&nbsp;bezpečného webového prohlížeče,
+			o&nbsp;kterém všichni nadšeně mluví.</dd>
+		
+			<dt><a href="https://support.mozilla.com/cs/">Podpora uživatelů</a></dt>
+			<dd>Oficiální stránky podpory uživatelů Mozilla Firefoxu. Web obsahuje
+			řadu tipů a&nbsp;návodů, které vám mohou pomoci.</dd>
+		
+			<dt><a href="http://forum.mozilla.cz/viewforum.php?f=3">Diskusní fórum</a></dt>
+			<dd>Webové fórum české komunity Mozilla Firefoxu pro podporu uživatelů. Máte-li
+			 problém, je to místo určené právě vám.</dd>
+		
+			<dt><a href="https://addons.mozilla.org/cs/firefox/">Doplňky pro Firefox</a></dt>
+			<dd>Rozšiřte si	Firefox podle svých představ pomocí nepřeberného
+			množství doplňků. Vytvořte si svůj Firefox!</dd>
+		
+			<dt><a href="http://www.mozilla.cz">Česká komunita uživatelů</a></dt>
+			<dd>Stránky české komunity Mozilla, kde můžete nalézt informace o&nbsp;aktuálním
+			dění, a&nbsp;kde se též můžete do projektu zapojit.</dd>
+		</dl>
+	</div>
 </div>
+
+<div id="site-info">
+	<div class="content">
+	  Web Firefox.cz provozuje Mozilla.cz a nejedná se o oficiální stránku Mozilla Corporation.
+	</div>
+</div>
+
 <div class="webstats">
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -54,6 +111,7 @@
 		} catch(err) {}
 	</script>
 </div>
+
 </div>
 </body>
 </html>

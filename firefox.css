@@ -1,0 +1,92 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#page {
+	background-color: #F9F9F9;
+	background-image: url("bg-stone.png");
+	background-position: center top;
+	background-repeat: repeat-x;
+	margin: 3px 0px;
+	padding: 0px;
+}
+
+.content {
+	margin:0 auto;
+	max-width: 500px;
+}
+
+#header {
+	padding: 60px 0 20px 0;
+}
+
+#logo {
+	padding-top: 20px;
+	width: 380px;
+}
+	
+#download-box {
+	float:right;
+	margin-top: 25px;
+}
+
+.download-other {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 6px;
+	color: #BBB;
+}
+
+.download-button-small.download-button-noicon .download-link .download-content {
+	background-image: none;
+}
+
+.download-button.download-button-noicon .download-link .download-content {
+	padding-top: 25px;
+	padding-left: 20px;
+}
+
+.download-content {
+	text-align:center;
+}
+
+.download-subtitle {
+	font-size: 20px;
+	color: white;
+}
+
+.download-other a {
+	color: #BBB;
+}
+
+dl dt {
+	font-size: 25px;
+}
+
+dl dd {
+	margin-bottom: 30px;
+}
+
+dl						{margin:1.3em 0 40px 0}
+dl dt					{font-weight:bold;font-size:1.4em}
+dl dd					{margin:.5em 0 1em 1em}
+
+#site-info {
+	background: none repeat scroll 0% 0% #FFF;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	color: #BBB;
+	font-size: 0.857em;
+	overflow: hidden;
+	padding: 28px 0px;
+}
+
+@media (max-width: 500px) {
+	.content {
+		margin: 0 10px 0 10px;
+	}
+	
+	#download-box {
+		display:none;
+	}
+}
