@@ -1,22 +1,3 @@
-<?php
-	function getPlatform() {
-		$uaString = isset($_SERVER["HTTP_USER_AGENT"]) ? $_SERVER["HTTP_USER_AGENT"] : "";
-		if(stristr($uaString, "Linux") || stristr($uaString, "X11") || stristr($uaString, "Lindows")) {
-			$arch =  8 * PHP_INT_SIZE;
-			if ($arch == 32) 
-				return "linux";
-			else 
-				return "linux64";
-		}
-
-		if(stristr($uaString, "Mac")) {
-			return "osx";
-		}
-
-		return "win";
-	}
-?>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
 <head>
@@ -45,8 +26,7 @@
 	
 		<div id="download-box">
 			<div id="download-button-desktop-beta" class="download-button download-button-beta download-button-small download-button-noicon">
-			<a class="download-link" id="download-link" href="http://www.mozilla.org/firefox/new/?scene=2#download-fx" 
-				data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=<?php echo getPlatform() ?>&amp;lang=cs">
+			<a class="download-link" id="download-link" href="http://www.mozilla.org/firefox/new/?scene=2#download-fx">
 							<span class="download-content">
 									<strong class="download-title"></strong>
                   <span class="download-subtitle">Stáhnout zdarma</span>
