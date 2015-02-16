@@ -20,7 +20,7 @@
 <div id="page">
 
 <div class="content">
-	<a href="http://www.mozilla.org/cs/" id="tabzilla" data-infobar="translation">Mozilla</a>
+	<a href="http://www.mozilla.org/cs/" id="tabzilla" data-infobar="update">Mozilla</a>
 	
 	<div id="header">         
 	
