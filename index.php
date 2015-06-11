@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow" />
 
-<link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
-<script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+<link href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+<script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 
 
 <link rel="stylesheet" media="screen,projection,tv" href="http://mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
