@@ -11,7 +11,7 @@
 <script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 
 
-<link rel="stylesheet" media="screen,projection,tv" href="http://mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
+<link rel="stylesheet" media="screen,projection,tv" href="https://mozorg.cdn.mozilla.net/media/css/responsive-bundle.css" />
 <link rel="stylesheet" media="screen,projection,tv" href="firefox.css" />
 </head>
 <body id="www-firefox-cz">
