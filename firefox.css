@@ -1,41 +1,42 @@
 html, body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
-#page {
-	background-color: #F9F9F9;
+body {
+	background-color: #f9f9f9;
 	background-image: url("bg-stone.png");
 	background-position: center top;
 	background-repeat: repeat-x;
-	margin: 3px 0px;
-	padding: 0px;
+	margin: 3px 0;
 }
 
-.content {
-	margin:0 auto;
+#page {
+	margin: 0 auto;
 	max-width: 500px;
 }
 
-#header {
+header {
 	padding: 60px 0 20px 0;
 }
 
 #logo {
+	display: inline-block;
 	padding-top: 20px;
-	width: 380px;
 }
-	
+
 #download-box {
-	float:right;
+	display: inline-block;
+	float: right;
 	margin-top: 25px;
+	text-align: center;
 }
 
 .download-other {
 	font-size: 11px;
 	text-align: center;
 	margin-top: 6px;
-	color: #BBB;
+	color: #bbb;
 }
 
 .download-button-small.download-button-noicon .download-link .download-content {
@@ -48,7 +49,7 @@ html, body {
 }
 
 .download-content {
-	text-align:center;
+	text-align: center;
 }
 
 .download-subtitle {
@@ -57,36 +58,44 @@ html, body {
 }
 
 .download-other a {
-	color: #BBB;
+	color: #bbb;
+}
+
+dl {
+	margin: 1.3em 0 40px 0;
 }
 
 dl dt {
-	font-size: 25px;
+	font-weight: bold;
+	font-size: 1.4em;
 }
 
 dl dd {
-	margin-bottom: 30px;
+	margin: .5em 0 1em 1em;
 }
 
-dl						{margin:1.3em 0 40px 0}
-dl dt					{font-weight:bold;font-size:1.4em}
-dl dd					{margin:.5em 0 1em 1em}
-
-#site-info {
-	background: none repeat scroll 0% 0% #FFF;
+footer {
+	background: none repeat scroll 0 0 #FFF;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	color: #BBB;
+	color: #bbb;
 	font-size: 0.857em;
 	overflow: hidden;
-	padding: 28px 0px;
+	padding: 28px 0;
+	text-align: center;
 }
 
 @media (max-width: 500px) {
-	.content {
-		margin: 0 10px 0 10px;
+	#page {
+		margin: 0 1em;
+	}
+	
+	#logo, #logo img, #download-box {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#download-box {
-		display:none;
+		float: none;
 	}
 }
