@@ -3,21 +3,20 @@ html, body {
 	padding: 0px;
 }
 
-#page {
+body {
 	background-color: #F9F9F9;
 	background-image: url("bg-stone.png");
 	background-position: center top;
 	background-repeat: repeat-x;
 	margin: 3px 0px;
-	padding: 0px;
 }
 
-.content {
+#page {
 	margin:0 auto;
 	max-width: 500px;
 }
 
-#header {
+header {
 	padding: 60px 0 20px 0;
 }
 
@@ -72,7 +71,7 @@ dl						{margin:1.3em 0 40px 0}
 dl dt					{font-weight:bold;font-size:1.4em}
 dl dd					{margin:.5em 0 1em 1em}
 
-#site-info {
+footer {
 	background: none repeat scroll 0% 0% #FFF;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	color: #BBB;
@@ -82,7 +81,7 @@ dl dd					{margin:.5em 0 1em 1em}
 }
 
 @media (max-width: 500px) {
-	.content {
+	#page {
 		margin: 0 10px 0 10px;
 	}
 	
