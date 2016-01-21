@@ -21,13 +21,15 @@ header {
 }
 
 #logo {
+	display: inline-block;
 	padding-top: 20px;
-	width: 380px;
 }
-	
+
 #download-box {
-	float:right;
+	display: inline-block;
+	float: right;
 	margin-top: 25px;
+	text-align: center;
 }
 
 .download-other {
@@ -72,20 +74,27 @@ dl dt					{font-weight:bold;font-size:1.4em}
 dl dd					{margin:.5em 0 1em 1em}
 
 footer {
-	background: none repeat scroll 0% 0% #FFF;
+	background: none repeat scroll 0 0 #FFF;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	color: #BBB;
 	font-size: 0.857em;
 	overflow: hidden;
 	padding: 28px 0px;
+	text-align: center;
 }
 
 @media (max-width: 500px) {
 	#page {
-		margin: 0 10px 0 10px;
+		margin: 0 1em;
+	}
+	
+	#logo, #logo img, #download-box {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	#download-box {
-		display:none;
+		float: none;
 	}
 }
