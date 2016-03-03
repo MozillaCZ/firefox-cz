@@ -16,6 +16,10 @@ body {
 	max-width: 500px;
 }
 
+#tabzilla:before {
+    background-color: #bbb;
+}
+
 header {
 	padding: 60px 0 20px 0;
 }
@@ -75,7 +79,7 @@ dl dd {
 }
 
 footer {
-	background: none repeat scroll 0 0 #FFF;
+	background: none repeat scroll 0 0 #fff;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	color: #bbb;
 	font-size: 0.857em;
