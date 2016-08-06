@@ -32,7 +32,7 @@ header {
 #download-box {
 	display: inline-block;
 	float: right;
-	margin-top: 25px;
+	margin-top: 32px;
 	text-align: center;
 }
 
@@ -41,24 +41,6 @@ header {
 	text-align: center;
 	margin-top: 6px;
 	color: #bbb;
-}
-
-.download-button-small.download-button-noicon .download-link .download-content {
-	background-image: none;
-}
-
-.download-button.download-button-noicon .download-link .download-content {
-	padding-top: 25px;
-	padding-left: 20px;
-}
-
-.download-content {
-	text-align: center;
-}
-
-.download-subtitle {
-	font-size: 20px;
-	color: white;
 }
 
 .download-other a {
