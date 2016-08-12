@@ -23,6 +23,15 @@
 </script>
 </head>
 <body>
+
+	<div id="mozilla-infobar" class="mozilla-infobar infobar-hidden" role="dialog" aria-hidden="true" data-infobar="update">
+		<p></p>
+		<ul>
+			<li><button class="btn-accept button green" type="button"></button></li>
+			<li><button class="btn-cancel" type="button"></button></li>
+		</ul>
+	</div>
+
 <div id="page">
 
 	<div id="tabzilla">
@@ -73,6 +82,9 @@
 <footer>
 	Web Firefox.cz provozuje Mozilla.cz a nejedná se o oficiální stránku Mozilla Corporation.
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/infobar.js"></script>
 
 </body>
 </html>
