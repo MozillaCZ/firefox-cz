@@ -16,8 +16,42 @@ body {
 	max-width: 500px;
 }
 
+.mozilla-infobar {
+	text-align: center;
+	background-color: #fff;
+	min-height: 3em;
+	line-height: 3em;
+	font-size: 1.1em;
+	padding-bottom: 3px;
+}
+
+.mozilla-infobar p,
+.mozilla-infobar li {
+	display: inline;
+	margin: 0 0 0 1em;
+}
+
+.mozilla-infobar ul {
+	display: inline;
+	margin: 0;
+	list-style-type: none;
+}
+
+.mozilla-infobar button {
+	background-color: transparent;
+	padding: .3em;
+	border: 1px solid #000;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: .8em;
+}
+
+.infobar-hidden {
+	display: none;
+}
+
 #tabzilla:before {
-    background-color: #bbb;
+	background-color: #bbb;
 }
 
 header {
