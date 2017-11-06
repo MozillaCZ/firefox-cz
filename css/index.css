@@ -104,7 +104,12 @@ footer {
     text-align: center;
 }
 
-footer img {
+aside {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+aside img {
     width: 32px;
     height: 32px;
     margin: 0 0.2em;
