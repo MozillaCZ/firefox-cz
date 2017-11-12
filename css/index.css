@@ -63,6 +63,10 @@ header {
     padding-top: 20px;
 }
 
+#logo img {
+    width: 223px;
+}
+
 #download-box {
     display: inline-block;
     float: right;
