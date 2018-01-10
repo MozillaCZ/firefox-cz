@@ -1,44 +1,17 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #f9f9f9;
-    background-image: url("../bg-stone.png");
-    background-position: center top;
-    background-repeat: repeat-x;
-    margin: 3px 0;
-}
-
-#page {
-    margin: 0 auto;
-    max-width: 500px;
+#masthead {
+    height: 3em;
 }
 
 .mozilla-infobar {
+    padding-top: 1em;
     text-align: center;
-    background-color: #fff;
-    min-height: 3em;
-    line-height: 3em;
-    font-size: 1.1em;
-    padding-bottom: 3px;
 }
 
-.mozilla-infobar p,
-.mozilla-infobar li {
+.mozilla-infobar * {
     display: inline;
-    margin: 0 0 0 1em;
-}
-
-.mozilla-infobar ul {
-    display: inline;
-    margin: 0;
-    list-style-type: none;
 }
 
 .mozilla-infobar button {
-    background-color: transparent;
     padding: .3em;
     border: 1px solid #000;
     border-radius: 3px;
@@ -50,87 +23,106 @@ body {
     display: none;
 }
 
-#tabzilla:before {
-    background-color: #bbb;
+main {
+    padding-top: 3em;
 }
 
-header {
-    padding: 60px 0 20px 0;
-}
-
-#logo {
-    display: inline-block;
-    padding-top: 20px;
-}
-
-#logo img {
-    width: 223px;
-}
-
-#download-box {
-    display: inline-block;
-    float: right;
-    margin-top: 32px;
+.main-header-section {
     text-align: center;
+    padding-top: 0;
+    min-height: 0;
 }
 
-.download-other {
-    font-size: 11px;
-    text-align: center;
-    margin-top: 6px;
-    color: #bbb;
+.main-header-section > * {
+    padding-top: 3em;
 }
 
-.download-other a {
-    color: #bbb;
+.main-header-section h1 {
+    background: none;
+    margin: 0;
+    padding: 0;
 }
 
-dl {
-    margin: 1.3em 0 40px 0;
+.main-header-section h1 img {
+    height: 90px;
 }
 
-dl dt {
-    font-weight: bold;
-    font-size: 1.4em;
+.main-header-section .fx-privacy-link {
+    padding-top: 1em;
 }
 
-dl dd {
-    margin: .5em 0 1em 1em;
+.main-header-section .header-image {
+    top: 3em;
 }
 
-footer {
-    background: none repeat scroll 0 0 #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    color: #bbb;
-    font-size: 0.857em;
-    overflow: hidden;
-    padding: 28px 0;
-    text-align: center;
+.main-header-section .header-image img {
+    width: auto;
 }
 
-aside {
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-aside img {
-    width: 32px;
-    height: 32px;
-    margin: 0 0.2em;
-}
-
-@media (max-width: 500px) {
-    #page {
-        margin: 0 1em;
-    }
-    
-    #logo, #logo img, #download-box {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #download-box {
+@media screen and (max-width: 1000px) {
+    .main-header-section .header-content {
         float: none;
+        width: auto;
     }
+    .main-header-section .header-image {
+        position: static;
+        width: auto;
+    }
+    .main-header-section .header-image img {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .key-features-section .key-feature .key-feature-content {
+        width: 50%;
+    }
+    .key-features-section .key-feature .key-feature-content p {
+        margin: 0;
+    }
+    .key-features-section .key-feature .key-feature-media {
+        width: 45%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.page-section {
+    padding-top: 0;
+}
+
+.key-features-section .key-feature {
+    margin: 0 0 2em 0;
+}
+
+.key-features-section .key-feature .content {
+    padding: 0;
+}
+
+.key-features-section .key-feature .key-feature-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.key-features-section .key-feature .key-feature-media,
+.key-features-section .key-feature .key-feature-media * {
+    height: 150px;
+}
+
+#colophon .logo a {
+    background: none;
+    display: inline;
+}
+
+#colophon .logo img {
+    height: 2em;
+}
+
+#colophon .social {
+    text-align: center;
+}
+
+#colophon .social img {
+    margin: 0 0.2em;
+    height: 2em;
 }
