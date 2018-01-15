@@ -13,7 +13,10 @@
 
 <header id="masthead" class="moz-sub-nav stuck">
     <div class="content">
-        <h2 class="masthead-logo"><img src="media/img/firefox-logo-wordmark.svg" alt="Firefox"></h2>
+        <h2 class="masthead-logo">
+            <a href="https://www.mozilla.cz/"><img src="media/img/MozillaCZ-02-512.png" alt="Mozilla.cz"></a>
+        </h2>
+
         <div id="mozilla-infobar" class="masthead-nav-main mozilla-infobar infobar-hidden" role="dialog" aria-hidden="true" data-infobar="update">
             <p></p>
             <ul>
@@ -32,8 +35,7 @@
 <main>
     <header class="main-header-section">
         <div class="content">
-            <div class="header-content">
-                <h1><img src="media/img/firefox-logo-wordmark.svg" alt="Firefox"></h1>
+                <h1 class="firefox-wordmark"><img src="media/img/firefox-logo.svg" alt="logo"> Firefox</h1>
                 <div class="download-button">
                     <a class="download-link button button-green" href="https://www.mozilla.org/cs/firefox/new/?scene=2&amp;from=firefoxcz">
                         <strong class="download-title">Stáhnout zdarma</strong>
@@ -42,106 +44,78 @@
                         <a href="https://www.mozilla.org/cs/privacy/firefox/?utm_source=www.firefox.cz">Firefox a soukromí</a>
                     </small>
                 </div>
-            </div>
-        </div>
-        <div class="header-image key-features-section">
-            <div class="key-feature">
-                <div class="content">
-                    <div class="key-feature-container">
-                        <div class="key-feature-content">
-                            <h2 class="section-title">
-                                <a href="https://www.mozilla.cz/produkty/firefox/">Firefox</a>
-                            </h2>
-                            <p>
-                                <a href="https://www.mozilla.cz/produkty/firefox/">Rychlý a&nbsp;bezpečný</a> webový
-                                prohlížeč, o&nbsp;kterém všichni tak nadšeně mluví.
-                            </p>
-                        </div>
-                        <div class="key-feature-media">
-                            <img src="media/img/firefox-logo.svg" alt="logo Firefox">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
 
     <section class="page-section key-features-section">
-        <div class="key-feature" style="display: none"></div>
-        <div class="key-feature">
-            <div class="content">
-                <div class="key-feature-container">
-                    <div class="key-feature-content">
-                        <h2 class="section-title">
-                            <a href="https://www.mozilla.cz/produkty/focus/">Firefox Focus</a>
-                        </h2>
+        <div id="firefox">
+            <a href="https://www.mozilla.cz/produkty/firefox/" class="content">
+                    <div class="section-content">
+                        <h2 class="section-title">Firefox</h2>
                         <p>
-                            Firefox Focus je jednoduchý prohlížeč pro&nbsp;Android a&nbsp;iOS. Nabízí automatické
-                            <a href="https://www.mozilla.cz/produkty/focus/">blokování reklam a&nbsp;ochranu
-                            proti sledování</a>.
+                            <strong>Rychlý a&nbsp;bezpečný</strong> webový prohlížeč, o&nbsp;kterém všichni tak nadšeně mluví.
                         </p>
                     </div>
-                    <div class="key-feature-media">
-                        <img src="media/img/firefox-focus-logo.svg" alt="logo Firefox Focus">
+                    <div class="section-media">
+                        <img src="media/img/firefox-logo.svg" alt="logo Firefox">
                     </div>
-                </div>
-            </div>
+            </a>
         </div>
-        <div class="key-feature">
-            <div class="content">
-                <div class="key-feature-container">
-                    <div class="key-feature-content">
-                        <h2 class="section-title">
-                            <a href="https://www.mozilla.cz/">Česká komunita</a>
-                        </h2>
-                        <p>
-                            Na stránkách české komunity Mozilly, najdete <a href="https://www.mozilla.cz/">informace
-                            o&nbsp;aktuálním dění</a> a&nbsp;můžete se zde sami do&nbsp;projektu
-                            <a href="https://www.mozilla.cz/zapojte-se/">zapojit</a>.
-                        </p>
-                    </div>
-                    <div class="key-feature-media">
-                        <img src="media/img/MozillaCZ-03-400.png" alt="logo Mozilla.cz">
-                    </div>
+        <div id="focus" class="privacy-section">
+            <a href="https://www.mozilla.cz/produkty/focus/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Firefox Focus</h2>
+                    <p>
+                        Firefox Focus je jednoduchý prohlížeč pro&nbsp;Android a&nbsp;iOS. Nabízí automatické
+                        <strong>blokování reklam a&nbsp;ochranu proti sledování</strong>.
+                    </p>
                 </div>
-            </div>
+                <div class="section-media">
+                    <img src="media/img/firefox-focus-logo.svg" alt="logo Firefox Focus">
+                </div>
+            </a>
         </div>
-        <div class="key-feature">
-            <div class="content">
-                <div class="key-feature-container">
-                    <div class="key-feature-content">
-                        <h2 class="section-title">
-                            <a href="https://www.mozilla.cz/podpora/">Podpora uživatelů</a>
-                        </h2>
-                        <p>
-                            Stránky a&nbsp;fórum podpory Firefoxu obsahují <a href="https://www.mozilla.cz/podpora/">řadu
-                            tipů a&nbsp;návodů</a>, které vám mohou pomoci. Pokud máte problém s&nbsp;Firefoxem, je to
-                            místo určené právě vám.
-                        </p>
-                    </div>
-                    <div class="key-feature-media">
-                        <img src="media/img/help.svg" alt="podpora Firefoxu">
-                    </div>
+        <div id="komunita">
+            <a href="https://www.mozilla.cz/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Česká komunita</h2>
+                    <p>
+                        Na stránkách české komunity Mozilly, najdete <strong>informace o&nbsp;aktuálním dění</strong>
+                        a&nbsp;můžete se zde sami do&nbsp;projektu <strong>zapojit</strong>.
+                    </p>
                 </div>
-            </div>
+                <div class="section-media">
+                    <img src="media/img/MozillaCZ-03-400.png" alt="logo Mozilla.cz">
+                </div>
+            </a>
         </div>
-        <div class="key-feature">
-            <div class="content">
-                <div class="key-feature-container">
-                    <div class="key-feature-content">
-                        <h2 class="section-title">
-                            <a href="https://www.mozilla.cz/doplnky/">Doplňky pro Firefox</a>
-                        </h2>
-                        <p>
-                            <a href="https://www.mozilla.cz/doplnky/">Rozšiřte si Firefox</a> podle svých představ pomocí nepřeberného
-                            množství doplňků. Vytvořte si svůj Firefox!
-                        </p>
-                    </div>
-                    <div class="key-feature-media">
-                        <img src="media/img/addons.svg" alt="doplňky">
-                    </div>
+        <div id="podpora">
+            <a href="https://www.mozilla.cz/podpora/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Podpora uživatelů</h2>
+                    <p>
+                        Stránky a&nbsp;fórum podpory Firefoxu obsahují <strong>řadu tipů a&nbsp;návodů</strong>, které vám
+                        mohou pomoci. Pokud máte problém s&nbsp;Firefoxem, je to místo určené právě vám.
+                    </p>
                 </div>
-            </div>
+                <div class="section-media">
+                    <img src="media/img/help.svg" alt="podpora Firefoxu">
+                </div>
+            </a>
+        </div>
+        <div id="doplnky">
+            <a href="https://www.mozilla.cz/doplnky/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Doplňky pro Firefox</h2>
+                    <p>
+                        <strong>Rozšiřte si Firefox</strong> podle svých představ pomocí nepřeberného množství doplňků.
+                        Vytvořte si svůj Firefox!
+                    </p>
+                </div>
+                <div class="section-media">
+                    <img src="media/img/addons.svg" alt="doplňky">
+                </div>
+            </a>
         </div>
     </section>
 </main>
