@@ -3,86 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <title>Mozilla Firefox - připraven pro vás, vaše soukromí a otevřený web</title>
-<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="media/img/firefox-logo.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" media="screen" href="css/responsive-bundle.css">
-<link rel="stylesheet" media="screen" href="css/tabzilla.css">
+<link rel="stylesheet" media="screen" href="css/pebbles-bundle.77b559310b92.css">
+<link rel="stylesheet" media="screen" href="css/firefox-home-bundle.305b47d644e9.css">
 <link rel="stylesheet" media="screen" href="css/index.css">
 </head>
 <body>
 
-<div id="mozilla-infobar" class="mozilla-infobar infobar-hidden" role="dialog" aria-hidden="true" data-infobar="update">
-    <p></p>
-    <ul>
-        <li><button class="btn-accept button green" type="button"></button></li>
-        <li><button class="btn-cancel" type="button"></button></li>
-    </ul>
-</div>
+<header id="masthead" class="moz-sub-nav stuck">
+    <div class="content">
+        <h2 class="masthead-logo">
+            <a href="https://www.mozilla.cz/"><img src="media/img/MozillaCZ-02-512.png" alt="Mozilla.cz"></a>
+        </h2>
 
-<div id="page">
-
-    <div id="tabzilla">
-        <a href="https://www.mozilla.cz/">Mozilla</a>
+        <div id="mozilla-infobar" class="masthead-nav-main mozilla-infobar infobar-hidden" role="dialog" aria-hidden="true" data-infobar="update">
+            <p></p>
+            <ul>
+                <li><button class="btn-accept button button-green" type="button"></button></li>
+                <li><button class="btn-cancel" type="button"></button></li>
+            </ul>
+        </div>
+        <div id="nav-download-firefox" class="download-button">
+            <a class="download-link button button-green" href="https://www.mozilla.org/cs/firefox/new/?scene=2&amp;from=firefoxcz">
+                <strong class="download-title">Stáhnout Firefox</strong>
+            </a>
+        </div>
     </div>
+</header>
 
-    <header>
-        <h1 id="logo">
-            <img src="media/img/firefox-logo-wordmark.svg" alt="Firefox">
-        </h1>
-        <div id="download-box">
-            <div id="download-button-desktop-release" class="download-button">
-                <a class="download-link button green" id="download-link" href="https://www.mozilla.org/cs/firefox/new/?scene=2#download-fx">
-                    <strong class="download-title">Stáhnout zdarma</strong>
-                </a>
-            </div>
-            <br />
-            <small class="download-other">
-                <a href="https://www.mozilla.org/privacy/firefox/">Firefox a soukromí</a> |
-                <a href="https://www.mozilla.cz/stahnout/firefox/">Všechny verze</a>
-            </small>
+<main>
+    <header class="main-header-section">
+        <div class="content">
+                <h1 class="firefox-wordmark"><img src="media/img/firefox-logo.svg" alt="logo"> Firefox</h1>
+                <div class="download-button">
+                    <a class="download-link button button-green" href="https://www.mozilla.org/cs/firefox/new/?scene=2&amp;from=firefoxcz">
+                        <strong class="download-title">Stáhnout zdarma</strong>
+                    </a>
+                    <small class="fx-privacy-link">
+                        <a href="https://www.mozilla.org/cs/privacy/firefox/?utm_source=www.firefox.cz">Firefox a soukromí</a>
+                    </small>
+                </div>
         </div>
     </header>
 
-    <main>
-       <dl>
-            <dt><a href="https://www.mozilla.cz/produkty/firefox/">Mozilla Firefox</a></dt>
-            <dd>Oficiální stránky rychlého a&nbsp;bezpečného webového prohlížeče,
-            o&nbsp;kterém všichni nadšeně mluví.</dd>
-           
-            <dt><a href="https://www.mozilla.cz/produkty/focus/">Firefox Focus</a></dt>
-            <dd>Firefox Focus je jednoduchý webový prohlížeč pro&nbsp;Android a&nbsp;iOS,
-            který má zabudované automatické blokování reklam a&nbsp;ochranu proti
-            sledování.</dd>
+    <section class="page-section key-features-section">
+        <div id="firefox">
+            <a href="https://www.mozilla.cz/produkty/firefox/" class="content">
+                    <div class="section-content">
+                        <h2 class="section-title">Firefox</h2>
+                        <p>
+                            <strong>Rychlý a&nbsp;bezpečný</strong> webový prohlížeč, o&nbsp;kterém všichni tak nadšeně mluví.
+                        </p>
+                    </div>
+                    <div class="section-media">
+                        <img src="media/img/firefox-logo.svg" alt="logo Firefox">
+                    </div>
+            </a>
+        </div>
+        <div id="focus">
+            <a href="https://www.mozilla.cz/produkty/focus/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Firefox Focus</h2>
+                    <p>
+                        Firefox Focus je jednoduchý prohlížeč pro&nbsp;Android a&nbsp;iOS. Nabízí automatické
+                        <strong>blokování reklam a&nbsp;ochranu proti sledování</strong>.
+                    </p>
+                </div>
+                <div class="section-media">
+                    <img src="media/img/firefox-focus-logo.svg" alt="logo Firefox Focus">
+                </div>
+            </a>
+        </div>
+        <div id="komunita">
+            <a href="https://www.mozilla.cz/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Česká komunita</h2>
+                    <p>
+                        Na stránkách české komunity Mozilly, najdete <strong>informace o&nbsp;aktuálním dění</strong>
+                        a&nbsp;můžete se zde sami do&nbsp;projektu <strong>zapojit</strong>.
+                    </p>
+                </div>
+                <div class="section-media">
+                    <img src="media/img/MozillaCZ-03-400.png" alt="logo Mozilla.cz">
+                </div>
+            </a>
+        </div>
+        <div id="podpora">
+            <a href="https://www.mozilla.cz/podpora/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Podpora uživatelů</h2>
+                    <p>
+                        Stránky a&nbsp;fórum podpory Firefoxu obsahují <strong>řadu tipů a&nbsp;návodů</strong>, které vám
+                        mohou pomoci. Pokud máte problém s&nbsp;Firefoxem, je to místo určené právě vám.
+                    </p>
+                </div>
+                <div class="section-media">
+                    <img src="media/img/help.svg" alt="podpora Firefoxu">
+                </div>
+            </a>
+        </div>
+        <div id="doplnky">
+            <a href="https://www.mozilla.cz/doplnky/" class="content">
+                <div class="section-content">
+                    <h2 class="section-title">Doplňky pro Firefox</h2>
+                    <p>
+                        <strong>Rozšiřte si Firefox</strong> podle svých představ pomocí nepřeberného množství doplňků.
+                        Vytvořte si svůj Firefox!
+                    </p>
+                </div>
+                <div class="section-media">
+                    <img src="media/img/addons.svg" alt="doplňky">
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
 
-            <dt><a href="https://www.mozilla.cz/">Česká komunita uživatelů</a></dt>
-            <dd>Stránky české komunity Mozilly, kde najdete informace o&nbsp;aktuálním
-            dění a&nbsp;kde se můžete do&nbsp;projektu zapojit.</dd>
+<footer id="colophon">
+    <div class="content">
+        <nav class="primary">
+            <div class="logo">
+                <a href="https://www.mozilla.cz/">
+                    <img src="media/img/MozillaCZ-02-512.png" alt="Mozilla.cz">
+                </a>
+            </div>
+            <section class="mozilla">
+                <h5>
+                    <a href="https://www.mozilla.org/cs/?utm_source=www.firefox.cz">Mozilla</a>
+                </h5>
+                <ul class="mozilla-links">
+                    <li><a href="https://www.mozilla.cz/mozilla/">O Mozille</a></li>
+                    <li><a href="https://www.mozilla.cz/">Český blog</a></li>
+                    <li><a href="https://www.mozilla.cz/o-nas/">Česká komunita</a></li>
+                    <li><a href="https://donate.mozilla.org/cs/?utm_source=www.firefox.cz">Příspěvek Mozille</a></li>
+                    <li><a href="https://www.mozilla.cz/zapojte-se/">Zapojte se</a></li>
+                </ul>
+            </section>
+            <section class="firefox">
+                <h5>
+                    <a href="https://www.mozilla.cz/produkty/firefox/">Firefox</a>
+                </h5>
+                <ul class="firefox-links">
+                    <li><a href="https://www.mozilla.org/cs/firefox/new/?utm_source=www.firefox.cz">Stáhnout Firefox</a></li>
+                    <li><a href="https://www.mozilla.cz/produkty/firefox/">Počítač</a></li>
+                    <li><a href="https://www.mozilla.cz/produkty/firefox-mobile/">Mobily</a></li>
+                    <li><a href="https://www.mozilla.org/cs/firefox/features/?utm_source=www.firefox.cz">Funkce</a></li>
+                    <li><a href="https://www.mozilla.org/cs/firefox/channel/?utm_source=www.firefox.cz">Další verze</a></li>
+                </ul>
+            </section>
+        </nav>
 
-            <dt><a href="https://www.mozilla.cz/podpora/">Podpora uživatelů</a></dt>
-            <dd>Stránky a&nbsp;fórum podpory uživatelů Firefoxu. Web obsahuje řadu tipů
-            a&nbsp;návodů, které vám mohou pomoci. Pokud máte problém
-            s&nbsp;Firefoxem, je to místo určené právě vám.</dd>
+        <div class="social">
+            <a href="https://twitter.com/MozillaCZ"><img src="media/img/twitter.svg" alt="Twitter" title="@MozillaCZ na Twitteru"></a>
+            <a href="https://www.facebook.com/MozillaCZ"><img src="media/img/facebook.svg" alt="Twitter" title="Mozilla.cz na Facebooku"></a>
+            <a href="https://www.meetup.com/find/?keywords=mozilla.cz&radius=Infinity"><img src="media/img/meetup.svg" alt="Meetup.com" title="Mozilla.cz na Meetup.com"></a>
+            <a href="https://t.me/MozillaCZ/"><img src="media/img/telegram.svg" alt="Telegram" title="Mozilla.cz na Telegramu"></a>
+        </div>
 
-            <dt><a href="https://www.mozilla.cz/doplnky/">Doplňky pro Firefox</a></dt>
-            <dd>Rozšiřte si Firefox podle svých představ pomocí nepřeberného
-            množství doplňků. Vytvořte si svůj Firefox!</dd>
-        </dl>
-    </main>
-
-    <aside>
-        <a href="https://twitter.com/MozillaCZ"><img src="media/img/twitter.svg" alt="Twitter" title="@MozillaCZ na Twitteru"></a>
-        <a href="https://www.facebook.com/MozillaCZ"><img src="media/img/facebook.svg" alt="Twitter" title="Mozilla.cz na Facebooku"></a>
-        <a href="https://www.meetup.com/find/?keywords=mozilla.cz&radius=Infinity"><img src="media/img/meetup.svg" alt="Meetup.com" title="Mozilla.cz na Meetup.com"></a>
-        <a href="https://t.me/MozillaCZ/"><img src="media/img/telegram.svg" alt="Telegram" title="Mozilla.cz na Telegramu"></a>
-    </aside>
-
-</div>
-
-<footer>
-    <p>
-        Web Firefox.cz provozuje Mozilla.cz. Nejedná se o oficiální stránku Mozilla Corporation.<br />
-        Zdrojový kód najdete na <a href="https://github.com/MozillaCZ/firefox-cz/" title="Web Firefox.cz na GitHubu">GitHubu</a>.
-    </p>
+        <nav class="secondary">
+            <p class="license">
+                Web Firefox.cz provozuje Mozilla.cz. Nejedná se o oficiální stránku Mozilla Corporation.
+                Zdrojový kód najdete na <a href="https://github.com/MozillaCZ/firefox-cz/" title="Web Firefox.cz na GitHubu">GitHubu</a>.
+            </p>
+        </nav>
+    </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -91,4 +176,3 @@
 
 </body>
 </html>
-

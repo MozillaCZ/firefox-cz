@@ -1,44 +1,23 @@
-html, body {
-    margin: 0;
-    padding: 0;
+/* Top header */
+
+#masthead {
+    height: 3em;
 }
 
-body {
-    background-color: #f9f9f9;
-    background-image: url("../bg-stone.png");
-    background-position: center top;
-    background-repeat: repeat-x;
-    margin: 3px 0;
-}
-
-#page {
-    margin: 0 auto;
-    max-width: 500px;
+#masthead .masthead-logo img {
+    max-width: none;
 }
 
 .mozilla-infobar {
+    padding-top: 1em;
     text-align: center;
-    background-color: #fff;
-    min-height: 3em;
-    line-height: 3em;
-    font-size: 1.1em;
-    padding-bottom: 3px;
 }
 
-.mozilla-infobar p,
-.mozilla-infobar li {
+.mozilla-infobar * {
     display: inline;
-    margin: 0 0 0 1em;
-}
-
-.mozilla-infobar ul {
-    display: inline;
-    margin: 0;
-    list-style-type: none;
 }
 
 .mozilla-infobar button {
-    background-color: transparent;
     padding: .3em;
     border: 1px solid #000;
     border-radius: 3px;
@@ -50,87 +29,174 @@ body {
     display: none;
 }
 
-#tabzilla:before {
-    background-color: #bbb;
-}
+/* Main area */
 
-header {
-    padding: 60px 0 20px 0;
-}
-
-#logo {
-    display: inline-block;
-    padding-top: 20px;
-}
-
-#logo img {
-    width: 223px;
-}
-
-#download-box {
-    display: inline-block;
-    float: right;
-    margin-top: 32px;
-    text-align: center;
-}
-
-.download-other {
-    font-size: 11px;
-    text-align: center;
-    margin-top: 6px;
-    color: #bbb;
-}
-
-.download-other a {
-    color: #bbb;
-}
-
-dl {
-    margin: 1.3em 0 40px 0;
-}
-
-dl dt {
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-dl dd {
-    margin: .5em 0 1em 1em;
-}
-
-footer {
-    background: none repeat scroll 0 0 #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    color: #bbb;
-    font-size: 0.857em;
-    overflow: hidden;
-    padding: 28px 0;
-    text-align: center;
-}
-
-aside {
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-aside img {
-    width: 32px;
-    height: 32px;
-    margin: 0 0.2em;
-}
-
-@media (max-width: 500px) {
-    #page {
-        margin: 0 1em;
+@media screen and (min-width: 760px) {
+    main {
+        padding-top: 3em;
     }
-    
-    #logo, #logo img, #download-box {
+}
+
+.main-header-section {
+    min-height: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header-section > * {
+    padding-top: 3em;
+}
+
+.main-header-section h1 {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.firefox-wordmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firefox-wordmark img {
+    height: 2em;
+    margin-right: 0.2em;
+}
+
+.main-header-section .fx-privacy-link {
+    padding-top: 1em;
+}
+
+/* Links in sections */
+
+.page-section {
+    padding-top: 0;
+}
+
+.page-section > div {
+    margin-bottom: 2em;
+    color: #fff;
+    position: relative;
+    background: #00feff linear-gradient(to left, #00feff 0, #10fcb2 67%, #24f954 100%);
+}
+
+.page-section > div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background: #00feff linear-gradient(to right, #00feff 0, #10fcb2 67%, #24f954 100%);
+}
+
+.page-section > div:hover::before {
+    opacity: 1;
+}
+
+.page-section > div .section-title::before {
+    background: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+    .page-section .content {
+        min-height: 14em;
+        display: flex;
+        align-items: center;
+    }
+
+    .page-section > div:nth-child(2n) .content {
+        flex-direction: row-reverse;
+    }
+
+    .page-section .content .section-media {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .page-section a.content {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
-    
-    #download-box {
-        float: none;
-    }
+}
+
+.page-section a.content {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.page-section .section-content h2 {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-section .section-media {
+    text-align: center;
+}
+
+.page-section .section-media img {
+    box-shadow: none;
+    height: 150px;
+}
+
+.page-section #firefox {
+    background: #003eaa linear-gradient(to left, #003eaa 0, #004ec2 50%, #0080ff 100%);
+}
+
+.page-section #firefox::before {
+    background: #003eaa linear-gradient(to right, #003eaa 0, #004ec2 50%, #0080ff 100%);
+}
+
+.page-section #focus {
+    background: #c42482 linear-gradient(to left,#ff272d 0,#c42482 33%,#ab217f 47%,#671878 84%,#4a1475 100%);
+}
+
+.page-section #focus::before {
+    background: #c42482 linear-gradient(to right,#ff272d 0,#c42482 33%,#ab217f 47%,#671878 84%,#4a1475 100%);
+}
+
+.page-section #komunita {
+    background: #904466 linear-gradient(135deg, #ec1C24 35%, #1b75bb 100%);
+}
+
+.page-section #komunita::before {
+    background: #904466 linear-gradient(-45deg, #ec1C24 0, #1b75bb 65%);
+}
+
+.page-section #podpora {
+    background: #90c84b linear-gradient(to right, #3bade2 0, #90c84b 50%);
+}
+
+.page-section #podpora::before {
+    background: #90c84b linear-gradient(to left, #3bade2 0, #90c84b 50%);
+}
+
+.page-section #doplnky {
+    background: #0f1126 linear-gradient(to left, #0f1126 0, #3f0fcd 100%);
+}
+
+.page-section #doplnky::before {
+    background: #0f1126 linear-gradient(to right, #0f1126 0, #3f0fcd 100%);
+}
+
+/* Footer */
+
+#colophon .logo a {
+    background: none;
+    display: inline;
+}
+
+#colophon .logo img {
+    height: 2em;
+}
+
+#colophon .social {
+    text-align: center;
+}
+
+#colophon .social img {
+    margin: 0 0.2em;
+    height: 2em;
 }
