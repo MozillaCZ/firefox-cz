@@ -2,7 +2,7 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "default-src 'none'; script-src 'self' www.google-analytics.com cdnjs.cloudflare.com; style-src 'self'; img-src 'self' www.mozilla.org www.google-analytics.com; font-src 'self' www.mozilla.org; base-uri 'none'; form-action 'none'"
+    Content-Security-Policy = "default-src 'none'; script-src 'self' www.mozilla.org www.google-analytics.com cdnjs.cloudflare.com; style-src 'self'; img-src 'self' www.mozilla.org www.google-analytics.com; font-src 'self' www.mozilla.org; base-uri 'none'; form-action 'none'"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
