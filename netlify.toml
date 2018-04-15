@@ -12,3 +12,11 @@
   for = "/media/img/*.svg"
   [headers.values]
     Content-Security-Policy = "default-src 'none'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Link = '''
+    </css/index.css>; rel=preload; as=style,
+    </media/img/firefox-logo.svg>; rel=preload; as=image,
+    </js/google-analytics.js>; rel=preload; as=script'''
