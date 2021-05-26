@@ -8,27 +8,6 @@
     max-width: none;
 }
 
-.mozilla-infobar {
-    padding-top: 1em;
-    text-align: center;
-}
-
-.mozilla-infobar * {
-    display: inline;
-}
-
-.mozilla-infobar button {
-    padding: .3em;
-    border: 1px solid #000;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: .8em;
-}
-
-.infobar-hidden {
-    display: none;
-}
-
 /* Main area */
 
 @media screen and (min-width: 760px) {
